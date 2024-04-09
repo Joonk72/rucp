@@ -1,4 +1,3 @@
-// use std::env;
 use std::fs;
 use std::path::Path;
 use std::path::PathBuf;
@@ -19,19 +18,6 @@ struct Args {
 }
 
 fn main() {
-    // // Collect command-line arguments
-    // let args: Vec<String> = env::args().collect();
-    // // Check if the correct number of arguments is provided
-    // if args.len() != 4 {
-    //     eprintln!("Usage: rfcp <source> <target> <thread_count>");
-    //     return;
-    // }
-
-    // // Parse command-line arguments
-    // let source = &args[1];
-    // let target: &String = &args[2];
-    // let thread_count = args[3].parse::<u64>().expect("Thread count must be a number");
-
     let args = Args::from_args();
 
     let source = &args.source;
