@@ -1,0 +1,15 @@
+[package]
+name = "rfcp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rayon = "1.5.1"
+indicatif = { version = "^0.17.8" }
+walkdir = "2.3.2"
+structopt = "0.3.25"
+
+[profile.release]
+debug = true
